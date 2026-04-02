@@ -10,8 +10,8 @@ An automated script (Auto Bot) for the **Last Meadow Online** (April Fools' Day 
 ---
 
 ### 📖 Choose your language / เลือกภาษา
-* [🇺🇸 English Documentation](#-english-version)
-* [🇹🇭 คู่มือการใช้งานภาษาไทย](#-เวอร์ชันภาษาไทย-thai-version)
+* [US English Documentation](#-english-version)
+* [TH คู่มือการใช้งานภาษาไทย](#-เวอร์ชันภาษาไทย-thai-version)
 * [💻 The Script / โค้ดสคริปต์](#-the-script--โค้ดสคริปต์)
 
 ---
@@ -162,7 +162,7 @@ function toggleAdventure(btnElement) {
                     if (b && !b.classList.contains('disabled__65fca')) b.click();
                 }
             });
-        }, 50); 
+        }, 20); 
     }
 }
 
@@ -295,4 +295,4 @@ refreshLanguageUI();
 **[TH]** โปรเจกต์นี้จัดทำขึ้นเพื่อการศึกษาเท่านั้น การใช้สคริปต์อัตโนมัติ (Bot/Macro) บนแพลตฟอร์ม Discord อาจขัดต่อเงื่อนไขการให้บริการ (Terms of Service) ผู้ใช้งานควรใช้งานด้วยความระมัดระวัง ผู้พัฒนาจะไม่รับผิดชอบต่อผลกระทบใดๆ ที่เกิดขึ้นกับบัญชีผู้ใช้ของคุณ
 
 ---
-*Created with ❤️ by [ใส่ชื่อหรือ GitHub Username ของคุณที่นี่]*
+*Created with ❤️ by [RoxyZ]*
