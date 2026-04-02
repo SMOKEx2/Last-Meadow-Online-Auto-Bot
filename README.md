@@ -17,10 +17,42 @@ An automated script (Auto Bot) for the **Last Meadow Online** (April Fools' Day 
 ---
 
 ## 🇺🇸 English Version
-*(Please see the features and instructions in the previous sections, or copy the script below!)*
+
+### ✨ Features
+* ⚔️ **Adventure Mode:** Auto-Clicker that clicks rapidly for you.
+* 🛠️ **Craft Mode:** Automatically plays the arrow-key mini-game (includes a 40ms delay per key press to make it look natural and prevent game glitches).
+* 🎯 **Combat Mode:** Auto-Aim system that instantly clicks the target as soon as it appears.
+* 📦 **Auto-Claim & Error Handling:** * Automatically clicks **"Continue"** to claim rewards.
+    * Automatically clicks **"Back"** when the "Out of resources" server warning pops up so the loop doesn't break.
+* 🎛️ **Floating Control Panel:** A glassmorphism UI on the top right corner. You can toggle each mode ON/OFF independently, or run all 3 modes simultaneously!
+
+### 🚀 How to Use
+1. Open Discord on your web browser (or the desktop app with Developer Mode enabled).
+2. Go to the **Last Meadow Online** mini-game window.
+3. Press `F12` or `Ctrl + Shift + I` on your keyboard to open **Developer Tools**.
+4. Go to the **Console** tab. *(Note: If this is your first time using the console, Discord might block pasting. Type `allow pasting` and press Enter first.)*
+5. Copy the script from the **[The Script](#-the-script--โค้ดสคริปต์)** section below, paste it into the Console, and press `Enter`.
+6. The **🤖 LM Auto Bot** control panel will appear. You're ready to go!
+
+---
 
 ## 🇹🇭 เวอร์ชันภาษาไทย (Thai Version)
-*(ฟีเจอร์และวิธีใช้งานเหมือนกับเวอร์ชันก่อนหน้า สามารถคัดลอกสคริปต์ด้านล่างไปใช้ได้เลยครับ)*
+
+### ✨ ฟีเจอร์หลัก
+* ⚔️ **โหมดผจญภัย (Adventure):** ระบบ Auto-Clicker คลิกรัวๆ อัตโนมัติ
+* 🛠️ **โหมดสร้าง (Craft):** เล่นมินิเกมกดลูกศรอัตโนมัติ (หน่วงเวลา 40ms ต่อปุ่ม เพื่อความเนียนและป้องกันเกมรวน)
+* 🎯 **โหมดต่อสู้ (Combat):** ระบบ Auto-Aim เล็งและคลิกเป้าหมายอัตโนมัติทันทีที่ปรากฏ
+* 📦 **Auto-Claim & Error Handling:** * กดปุ่ม **"ไปต่อ"** เพื่อรับของรางวัลอัตโนมัติ
+    * กดปุ่ม **"กลับ"** ให้อัตโนมัติเมื่อเจอหน้าต่างแจ้งเตือนเซิร์ฟเวอร์ทรัพยากรหมด
+* 🎛️ **Floating Control Panel:** แผงควบคุมดีไซน์กระจกใส สามารถกดสลับ เปิด-ปิด (ON/OFF) และเปลี่ยนภาษาได้ทันที
+
+### 🚀 วิธีใช้งาน
+1. เปิด Discord บนเว็บเบราว์เซอร์ (หรือแอปพลิเคชันที่เปิดโหมดนักพัฒนาไว้)
+2. เข้าไปที่หน้าต่างมินิเกม **Last Meadow Online**
+3. กดปุ่ม `F12` หรือ `Ctrl + Shift + I` บนคีย์บอร์ด เพื่อเปิดหน้าต่าง **Developer Tools**
+4. ไปที่แท็บ **Console** *(หมายเหตุ: หากเพิ่งเคยเปิด Console ระบบอาจบล็อกไม่ให้วางโค้ด ต้องพิมพ์ `allow pasting` แล้วกด Enter ก่อน 1 ครั้ง)*
+5. คัดลอกโค้ดสคริปต์จากหัวข้อ **[โค้ดสคริปต์](#-the-script--โค้ดสคริปต์)** ด้านล่างนี้ไปวางในช่อง Console แล้วกด `Enter`
+6. แผงควบคุม **🤖 LM Auto Bot** จะปรากฏขึ้น พร้อมฟาร์มทันที!
 
 ---
 
@@ -130,7 +162,7 @@ function toggleAdventure(btnElement) {
                     if (b && !b.classList.contains('disabled__65fca')) b.click();
                 }
             });
-        }, 20); 
+        }, 50); 
     }
 }
 
@@ -253,3 +285,14 @@ document.body.appendChild(panel);
 
 // ตั้งค่า UI เริ่มต้น
 refreshLanguageUI();
+```
+
+---
+
+## ⚠️ Disclaimer / ข้อควรระวัง
+**[EN]** This project is for educational purposes only. Using automated scripts, bots, or macros on Discord may violate their Terms of Service. Use at your own risk. The developer is not responsible for any bans, penalties, or consequences that may occur to your account.
+
+**[TH]** โปรเจกต์นี้จัดทำขึ้นเพื่อการศึกษาเท่านั้น การใช้สคริปต์อัตโนมัติ (Bot/Macro) บนแพลตฟอร์ม Discord อาจขัดต่อเงื่อนไขการให้บริการ (Terms of Service) ผู้ใช้งานควรใช้งานด้วยความระมัดระวัง ผู้พัฒนาจะไม่รับผิดชอบต่อผลกระทบใดๆ ที่เกิดขึ้นกับบัญชีผู้ใช้ของคุณ
+
+---
+*Created with ❤️ by [ใส่ชื่อหรือ GitHub Username ของคุณที่นี่]*
