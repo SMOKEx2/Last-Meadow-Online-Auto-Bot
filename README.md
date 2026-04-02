@@ -112,8 +112,8 @@ function clickPopupByText(textArray) {
 
 function updateBtnUI(btn, modeKey, isRunning) {
     let t = textData[currentLang];
-    btn.className = \`lm-btn \${isRunning ? 'btn-on' : 'btn-off'}\`;
-    btn.innerHTML = \`<span>\${t[modeKey]}</span> <span>\${isRunning ? t.on : t.off}</span>\`;
+    btn.className = `lm-btn ${isRunning ? 'btn-on' : 'btn-off'}`;
+    btn.innerHTML = `<span>${t[modeKey]}</span> <span>${isRunning ? t.on : t.off}</span>`;
 }
 
 function toggleAdventure(btnElement) {
@@ -130,7 +130,7 @@ function toggleAdventure(btnElement) {
                     if (b && !b.classList.contains('disabled__65fca')) b.click();
                 }
             });
-        }, 50); 
+        }, 20); 
     }
 }
 
